@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #800000; /* Dark red for a contrasting theme */
+    background-color: #800000;
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -24,6 +24,27 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a40000;
 }
 
 section {
@@ -57,6 +78,14 @@ blockquote {
     border-left: 5px solid #800000;
 }
 
+.alan-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 button {
     background-color: #800000;
     color: #fff;
@@ -78,4 +107,40 @@ footer {
     padding: 1rem;
     background-color: #800000;
     color: #fff;
+}
+
+footer div {
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #a40000;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    .alan-image {
+        max-width: 100%;
+    }
 }
